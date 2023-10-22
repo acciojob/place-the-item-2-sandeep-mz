@@ -1,2 +1,22 @@
 
 /* Your CSS Code here. */
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: calc(14.2857% - 10px); /* Calculate width for 7 items with spacing */
+  margin-right: 10px; /* Space between items */
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px; /* Space below items */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.item:last-child {
+  margin-right: 0; /* Remove margin on the last item in the row */
+}
